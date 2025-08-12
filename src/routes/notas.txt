@@ -1,0 +1,28 @@
+// const jwt = require('jsonwebtoken')
+// require('dotenv').config()
+
+//Middleware
+// RotasPrivadas.use((request,response, next) => {
+//     console.log(request.headers.token)
+
+//     let auth = false
+
+//     if(request.headers.token){
+//         const {token} = request.headers
+
+//         try {
+//             jwt.verify(token, process.env.APP_KEY_TOKEN)
+//             auth = true
+//         }
+//         catch(e)
+//         {
+//             return response.status(403).send(e)
+//         }
+        
+//     }
+
+//     if (auth === false){
+//         return response.status(403).send('não autorizado')
+//     }
+//     next();
+// })

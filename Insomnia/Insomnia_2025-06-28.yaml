@@ -1,0 +1,430 @@
+type: collection.insomnia.rest/5.0
+name: My first collection
+meta:
+  id: wrk_18a9fb8765a24b67a07cba40379eee60
+  created: 1750798920771
+  modified: 1750798920771
+collection:
+  - name: Usuarios
+    meta:
+      id: fld_32c85d0d965e4b2eb3abdfb3a7c8f024
+      created: 1749431674928
+      modified: 1750798974621
+      sortKey: -1749431674928
+    children:
+      - url: http://localhost:3000/api/private/v1/user/
+        name: Listar Todos
+        meta:
+          id: req_222a88bd8cae4c6fa3df4d3e215683c8
+          created: 1749431691032
+          modified: 1750971347198
+          isPrivate: false
+          sortKey: -1749526832502
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_e69217970cd54bd18a1cee3df5ed4e1c
+          - id: pair_dedf8d2b71ba4f63ba8fd63074c680d0
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJrZWx2YWx2ZXMuNEBnbWFpbC5jb20iLCJub21lIjoiS2VsdiIsImlhdCI6MTc1MDk3MTIxMSwiZXhwIjoxNzUwOTc0ODExfQ.AIlH6XGEM5r3-k_kC4JRdrkVmRKbCV-UDI1TsuAkbkI
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/public/register
+        name: Criar
+        meta:
+          id: req_0ef9459b12ae4125ade8d86fc40544a6
+          created: 1749437083646
+          modified: 1750886548957
+          isPrivate: false
+          sortKey: -1749437083646
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"firstname": "Kelv",
+            	"surname": "Freitas",
+            	"email": "kelvalves.4@gmail.com",
+            	"password": "ktz3@90"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_bea24e2f433c49918cc506a29a6b0f17
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_92e5af05727749088e25680c7d82d996
+          - id: pair_15fef2ed72c8444399cc8bae8e81e555
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJrZWx2YWx2ZXMuNEBnbWFpbC5jb20iLCJub21lIjoiS2VsdiIsImlhdCI6MTc1MDg4NTYwMCwiZXhwIjoxNzUwODg1NjIwfQ.evOPsXS-B2WPHReaRlUJUsI-9gnbAb0bitULHwxuUvU
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/private/v1/user/3
+        name: Deletar
+        meta:
+          id: req_7c1844059f37499ca4769cc7050ffd5c
+          created: 1749525493184
+          modified: 1750821203032
+          isPrivate: false
+          sortKey: -1749525493184
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_cac9d80192fc426b80c1b6e4b411c1ba
+          - id: pair_a851b9c1e2864016802bedf1bb93909c
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqb25hc2ZyZWl0YXNAZ21haWwuY29tIiwibm9tZSI6IkpvbmFzIiwiaWF0IjoxNzUwODE1ODY3fQ._m16AsZbd3iUNcZMQe_sQDyVDajEzfZD7b6oxWySln0
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/private/v1/user/2
+        name: Atualizar
+        meta:
+          id: req_a66e8488fecb4952a390ec6c8f846a04
+          created: 1749525701984
+          modified: 1750821192570
+          isPrivate: false
+          sortKey: -1749525701984
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"firstname": "Gabriel",
+            	"surname": "Freitas",
+            	"email": "gabrielfreitas@gmail.com",
+            	"password": "2034"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_8b80b6b88b61449b95a6a4f72422a02d
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_a84d4829100c430d93b28c9cfa787325
+          - id: pair_6bb687b998c547de8c5421ca2acceaf5
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqb25hc2ZyZWl0YXNAZ21haWwuY29tIiwibm9tZSI6IkpvbmFzIiwiaWF0IjoxNzUwODE1ODY3fQ._m16AsZbd3iUNcZMQe_sQDyVDajEzfZD7b6oxWySln0
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/private/v1/user/4
+        name: Buscar Usuario
+        meta:
+          id: req_57f059ec09e74257ba7f98ac3770db2c
+          created: 1749526832402
+          modified: 1750821172587
+          isPrivate: false
+          sortKey: -1749526832402
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+            id: pair_be2495fe086c489bb587ba55f8df6f2a
+          - id: pair_7d150452b65340eebdb07153695a86ef
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJqb25hc2ZyZWl0YXNAZ21haWwuY29tIiwibm9tZSI6IkpvbmFzIiwiaWF0IjoxNzUwODE1ODY3fQ._m16AsZbd3iUNcZMQe_sQDyVDajEzfZD7b6oxWySln0
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Produtos
+    meta:
+      id: fld_8345de19fdfa4503bf681197b3fdc73b
+      created: 1750913111951
+      modified: 1750913111951
+      sortKey: -1750913111951
+    children:
+      - url: http://localhost:3000/api/private/v1/product/search
+        name: Listar Todos
+        meta:
+          id: req_1f23715630894824823f11ece20e56b0
+          created: 1750913118637
+          modified: 1751085886653
+          isPrivate: false
+          sortKey: -1750917931144
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+            id: pair_d26c97f6bb3347baa950986aa292e36d
+          - id: pair_bed35e38f34d426a94ca0e76cf3b9ed9
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJrZWx2YWx2ZXMuNEBnbWFpbC5jb20iLCJub21lIjoiS2VsdiIsImlhdCI6MTc1MTA4NTY4MiwiZXhwIjoxNzUxMDg5MjgyfQ.8jb2g_Mv-hteTVpjFWnfUrbHTLEsMnUiPoRD1eNaKbs
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/private/v1/product
+        name: Cadastrar Produto
+        meta:
+          id: req_32862f461be549fe9bb5913cb1551e4a
+          created: 1750918018321
+          modified: 1751088039875
+          isPrivate: false
+          sortKey: -1750917931244
+        method: POST
+        body:
+          mimeType: application/json
+          text: |+
+            {
+              "enabled": true,
+              "name": "Tênis Puma - Masculino",
+              "slug": "Tênis Puma - Masculino",
+              "stock": 15,
+              "description": "Descrição do Tênis Puma Masculino",
+              "price": 50.9,
+              "price_with_discount": 30.9,
+              "category_ids": [3],
+              "images": [
+                {
+                  "content": "/products/nike-black.png"
+                },
+                {
+                  "content": "/products/nike-blue.png",
+                  "className": "bg-blue-100"
+                },
+                {
+                  "content": "/products/nike-black.png",
+                  "className": "bg-amber-100"
+                },
+                {
+                  "content": "/products/nike-green.png",
+                  "className": "bg-green-100"
+                }
+              ],
+              "options": []
+            }
+
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_56e2a952a9664fc69e6b3a094cc85a7b
+          - name: User-Agent
+            value: insomnia/11.1.0
+            id: pair_c229e4874a224b6c89e68ad9f13be149
+          - id: pair_fbb87d0ea1b54b5aa083afdcd4dec016
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJrZWx2YWx2ZXMuNEBnbWFpbC5jb20iLCJub21lIjoiS2VsdiIsImlhdCI6MTc1MTA4NTY4MiwiZXhwIjoxNzUxMDg5MjgyfQ.8jb2g_Mv-hteTVpjFWnfUrbHTLEsMnUiPoRD1eNaKbs
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/private/v1/product/3
+        name: Buscar Produto
+        meta:
+          id: req_74326707fb644d91af5ad36a85b04735
+          created: 1750963692063
+          modified: 1750971223215
+          isPrivate: false
+          sortKey: -1750917931344
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+            id: pair_44728a67da7847c1a4ce4d2a73590683
+          - id: pair_1de34575d89041739d153996841f7aae
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJrZWx2YWx2ZXMuNEBnbWFpbC5jb20iLCJub21lIjoiS2VsdiIsImlhdCI6MTc1MDk3MTIxMSwiZXhwIjoxNzUwOTc0ODExfQ.AIlH6XGEM5r3-k_kC4JRdrkVmRKbCV-UDI1TsuAkbkI
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/private/v1/product/1
+        name: Atualizar Produto
+        meta:
+          id: req_93c013b0df5e425280e65f252fcb6092
+          created: 1751072649560
+          modified: 1751081891712
+          isPrivate: false
+          sortKey: -1751072649560
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "enabled": true,
+              "name": "Tênis K-swiss V8 - Masculino",
+              "slug": "Tênis K-swiss V8 - Masculino",
+              "stock": 15,
+              "description": "Descrição do Tênis K-swiss V8 Masculino",
+              "price": 50.9,
+              "price_with_discount": 30.9,
+              "category_ids": [3],
+              "images": [
+                {
+                  "content": "/products/nike-black.png"
+                },
+                {
+                  "content": "/products/nike-black.png",
+                  "className": "bg-blue-100"
+                },
+                {
+                  "content": "/products/nike-blue.png",
+                  "className": "bg-amber-100"
+                },
+                {
+                  "content": "/products/nike-green.png",
+                  "className": "bg-green-100"
+                }
+
+              ],
+
+              "options": []
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_92315f815f6b4fa49ed98d6f49868ddb
+          - name: User-Agent
+            value: insomnia/11.1.0
+            id: pair_b3f0b5688f3e434f9eaf960222614b38
+          - id: pair_b5846aa824f74e8094f277a44bc674e2
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJrZWx2YWx2ZXMuNEBnbWFpbC5jb20iLCJub21lIjoiS2VsdiIsImlhdCI6MTc1MTA4MTg4MCwiZXhwIjoxNzUxMDg1NDgwfQ.FVZ94Fi1gPY2Dq-YfdrhOhg69UA5o1TNJx3ctO4oYn8
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/private/v1/product/3
+        name: Deletar Produto
+        meta:
+          id: req_658cc861c37c4b5097d374989ca2cd19
+          created: 1751082074109
+          modified: 1751082153446
+          isPrivate: false
+          sortKey: -1751072649660
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+            id: pair_096eaf90c491440783495c74786caed2
+          - id: pair_00be9abd3cdb420b9000d30a60ce3c99
+            name: token
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJrZWx2YWx2ZXMuNEBnbWFpbC5jb20iLCJub21lIjoiS2VsdiIsImlhdCI6MTc1MTA4MTg4MCwiZXhwIjoxNzUxMDg1NDgwfQ.FVZ94Fi1gPY2Dq-YfdrhOhg69UA5o1TNJx3ctO4oYn8
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - url: http://localhost:3000/api/public/login
+    name: Login
+    meta:
+      id: req_4b83c01e314b4bc5bbf49ea761315e7a
+      created: 1749334867402
+      modified: 1750883878925
+      isPrivate: false
+      sortKey: -1749334867402
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "kelvalves.4@gmail.com",
+        	"password": "ktz3@90"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/v1/user/
+    name: LIST
+    meta:
+      id: req_b1dc7a18a0b94902bedb039a7d81467e
+      created: 1749340240346
+      modified: 1750797508688
+      isPrivate: false
+      sortKey: -1749340240346
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+      - name: token
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXN1YXJpbyI6ImFkbWluIiwibG9naW4iOiJhZG1pbiIsInNlbmhhIjoiMTIzMTIzIiwiaWF0IjoxNzQ5MzQ4NzUxfQ.Hjx2F6kWcpzKH3Smdnr-9iwAA5ytO1YY2mWwDuaKvco
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_5b933f407e934cb19a70da51763a2097
+    created: 1749334867138
+    modified: 1749334867138
+environments:
+  name: Base Environment
+  meta:
+    id: env_0234c05779174f5ebe6f6c2526feb2c7
+    created: 1749334867055
+    modified: 1749334867055
+    isPrivate: false
